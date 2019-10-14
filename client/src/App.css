@@ -23,6 +23,10 @@
   color: #61dafb;
 }
 
+.favorite {
+  border: 2px solid gold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
