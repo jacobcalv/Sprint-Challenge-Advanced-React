@@ -26,21 +26,22 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ] Name three lifecycle methods and their purposes.
 - [ ] What is the purpose of a custom hook?
 - [ ] Why is it important to test our apps?
+            DONE IN ANSWERS FILE
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [1 ] Create a forked copy of this project.
+- [ 1] Add TL as collaborator on Github.
+- [ 1] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [ 1] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [1 ] Run `yarn` to download dependencies.
+- [ 1] Run the server using `yarn start` or `node server.js`.
+- [ 1] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [ 1] Still inside the `client` folder run `yarn start` to run the client application.
+- [ 1] Implement the project on this Branch, **committing progress & changes often.**
+- [ 1] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 

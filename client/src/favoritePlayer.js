@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-
+import './App.css'
 
 const UseLocalStorage = (key, initialValue) => {
     const [storedValue, setStoredValue] = useState(() => {
@@ -18,22 +18,20 @@ const UseLocalStorage = (key, initialValue) => {
 
 const FavoritePlayer = ()=>  {
     const [myfavorite, setMyFavorite] = UseLocalStorage("favoritePlayer", "");
-    const Input = styled.input`
-        width: 10%;
-        margin-left: 45%;
-    `
+
     const FavoritePlayer = styled.h2`
         text-align: center;
     `
     return(
     <>
-    <form>
-        <Input placeholder='type favorite player here' onSubmit={e=> e.preventDefault()} onChange={e => setMyFavorite(e.target.value)}>
+    <FavoritePlayer>My Favorite Player is: {myfavorite}</FavoritePlayer>
+    <form onSubmit={e=>e.preventDefault()}>
+        <input className='input' placeholder='type favorite player here' value={myfavorite} onChange={e=> setMyFavorite(e.target.value)} >
 
-        </Input>
+        </input>
 
     </form>
-    <FavoritePlayer>My Favorite Player is: {localStorage.getItem('favoritePlayer')}</FavoritePlayer>
+
     </>
 )}
 

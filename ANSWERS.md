@@ -11,7 +11,7 @@
 
 - [ ] What is the purpose of a custom hook?
 
-    The purpose of custom hooks is so that you can like the name customize what the hooks will do for you and are reusable. 
+    The purpose of custom hooks is so that you can like the name says customize what the hooks will do for you and are reusable. 
 
 - [ ] Why is it important to test our apps?
 

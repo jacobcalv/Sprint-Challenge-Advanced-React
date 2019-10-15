@@ -1,7 +1,6 @@
-import React, { Component, useState } from 'react'
+import React, { Component} from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
-import Navbar from "./nav"
 import FavoritePlayer from "./favoritePlayer"
 
 export class App extends Component {
@@ -12,7 +11,7 @@ export class App extends Component {
       players : []
     }
   }
-  
+
   componentDidMount() {
     this.fetchSoccerData()
     
@@ -20,15 +19,15 @@ export class App extends Component {
   fetchSoccerData = () => {
     axios.get('http://localhost:5000/api/players')
     .then(res => {
-      console.log(res.data)
       this.setState({
         players: res.data
       })
     })
     .catch(error => {
-      console.log('👎', error)
+      console.log(error)
     })
   }
+
   render() {
 
   const Container = styled.div`
@@ -71,17 +70,17 @@ export class App extends Component {
   const Button = styled.button`
   
   `
+  
     return (
-      <>
-
+      <div data-testid='app-test' className="App">
       <Container>
 
-      <Title>Women's World Cup Players Ranked By Search Interest</Title>
+      <Title data-testid="main-header">Women's World Cup Players Ranked By Search Interest</Title>
       <FavoritePlayer/>
       {/* <Button onClick={toggleInvert}>Invert Cards</Button>  */}
       <CardContainer>
         {this.state.players.map((player,index) => (
-              <Card key={index} id='card'>
+              <Card key={index} id='card' >
                 <Name>{player.name}</Name>
                 <Country>{player.country}</Country>
                 <Rank>#{index + 1}</Rank>
@@ -89,7 +88,7 @@ export class App extends Component {
           ))}
       </CardContainer>
     </Container>  
-    </>
+    </div>
     )
   }
 }
